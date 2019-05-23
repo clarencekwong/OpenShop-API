@@ -12,4 +12,4 @@ Vendor.create({company:"Ron Swanson", email:"ron", password:"123"})
 
 User.create({name:"cust", email:"123", password:"123"})
 
-p "things created"
+p "things created or is it?"

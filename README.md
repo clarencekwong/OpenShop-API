@@ -1,5 +1,9 @@
 # OpenShop
 
+[OpenShop](https://fs-openshop.herokuapp.com/)
+
+Please allow the dyno to spin up if the application is off
+
 OpenShop is e-commerce service provider directed to small businesses to allow them to build their online shopping presence. Vendors can easily add and edit shop products to be sold online. Consumers are able to access stores advertised by companies and shop what they want.
 
 ## Libraries

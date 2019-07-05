@@ -3,10 +3,9 @@ class Api::V1::StripeController < ApplicationController
     def charge
         Stripe.api_key = ENV['stripe_secret_key']        
         token = stripe_params[:token_id]
-        byebug
         if token
         charge = Stripe::Charge.create({
-            amount: 50,
+            amount: stripe_params[:amount] * 100,
             currency: 'cad',
             description: 'TESTING CHARGE',
             source: token,
@@ -20,6 +19,6 @@ class Api::V1::StripeController < ApplicationController
     private
 
     def stripe_params
-        params.permit(:token_id)
+        params.permit(:token_id, :amount)
     end
 end

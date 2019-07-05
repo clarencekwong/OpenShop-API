@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       post '/vendorlogin', to: 'auth#vendorlogin'
       get '/vendorlogin', to: 'auth#auto_vendorlogin'
       post '/storeorders', to: 'vendors#orderedProducts'
+      post '/charge', to: 'stripe#charge'
     end
   end
 end

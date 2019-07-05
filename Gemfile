@@ -22,7 +22,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'mini_magick', '~> 4.8'
 
 gem 'jwt'
-
+gem 'stripe'
 gem 'active_model_serializers'
 
 gem "aws-sdk-s3"
